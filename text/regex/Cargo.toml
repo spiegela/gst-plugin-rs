@@ -6,13 +6,13 @@ license = "MPL-2.0"
 edition = "2021"
 rust-version = "1.70"
 description = "GStreamer Regular Expression Plugin"
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 
 [dependencies]
 regex = "1.5"
 
 [dependencies.gst]
-git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs"
+git = "https://github.com/sdroege/gstreamer-rs"
 package="gstreamer"
 
 [lib]
@@ -24,7 +24,7 @@ path = "src/lib.rs"
 gst-plugin-version-helper = { path="../../version-helper" }
 
 [dev-dependencies.gst-check]
-git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs"
+git = "https://github.com/sdroege/gstreamer-rs"
 package="gstreamer-check"
 
 [features]

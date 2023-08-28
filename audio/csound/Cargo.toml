@@ -2,21 +2,21 @@
 name = "gst-plugin-csound"
 version = "0.12.0-alpha.1"
 authors = ["Natanael Mojica <neithanmo@gmail.com>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 license = "MPL-2.0"
 edition = "2021"
 rust-version = "1.70"
 description = "GStreamer Audio Filter plugin based on Csound"
 
 [dependencies]
-gst = { package = "gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-base = { package = "gstreamer-base", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-audio = { package = "gstreamer-audio", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst = { package = "gstreamer", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-base = { package = "gstreamer-base", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-audio = { package = "gstreamer-audio", git = "https://github.com/sdroege/gstreamer-rs" }
 csound = "0.1.8"
 byte-slice-cast = "1.0"
 
 [dev-dependencies]
-gst-check = { package = "gstreamer-check", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst-check = { package = "gstreamer-check", git = "https://github.com/sdroege/gstreamer-rs" }
 
 [lib]
 name = "gstcsound"

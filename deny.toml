@@ -184,7 +184,7 @@ version = "0.19"
 unknown-registry = "deny"
 unknown-git = "deny"
 allow-git = [
-  "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs",
+  "https://github.com/sdroege/gstreamer-rs",
   "https://github.com/gtk-rs/gtk-rs-core",
   "https://github.com/gtk-rs/gtk4-rs",
   "https://github.com/rust-av/ffv1",

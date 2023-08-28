@@ -2,7 +2,7 @@
 name = "gst-plugin-file"
 version = "0.12.0-alpha.1"
 authors = ["Sebastian Dröge <sebastian@centricular.com>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 license = "MIT OR Apache-2.0"
 description = "GStreamer Rust File Source/Sink Plugin"
 edition = "2021"
@@ -10,8 +10,8 @@ rust-version = "1.70"
 
 [dependencies]
 url = "2"
-gst = { package = "gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-base = { package = "gstreamer-base", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst = { package = "gstreamer", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-base = { package = "gstreamer-base", git = "https://github.com/sdroege/gstreamer-rs" }
 
 [lib]
 name = "gstrsfile"

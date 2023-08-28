@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Mathieu Duponchelle <mathieu@centricular.com>"]
 license = "MPL-2.0"
 description = "GStreamer WebRTC sink default protocol"
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 rust-version = "1.70"
 
 [dependencies]

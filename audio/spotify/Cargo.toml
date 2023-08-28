@@ -2,15 +2,15 @@
 name = "gst-plugin-spotify"
 version = "0.12.0-alpha.1"
 authors = ["Guillaume Desmottes <guillaume@desmottes.be>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 license = "MPL-2.0"
 description = "GStreamer Spotify Plugin"
 edition = "2021"
 rust-version = "1.70"
 
 [dependencies]
-gst = { package = "gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-base = { package = "gstreamer-base", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst = { package = "gstreamer", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-base = { package = "gstreamer-base", git = "https://github.com/sdroege/gstreamer-rs" }
 librespot = { version = "0.4", default-features = false }
 tokio = "1.0"
 futures = "0.3"

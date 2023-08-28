@@ -2,22 +2,22 @@
 name = "gst-plugin-hsv"
 version = "0.12.0-alpha.1"
 authors = ["Julien Bardagi <julien.bardagi@gmail.com>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 license = "MIT OR Apache-2.0"
 edition = "2021"
 rust-version = "1.70"
 description = "GStreamer plugin with HSV manipulation elements"
 
 [dependencies]
-gst = { package = "gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-base = { package = "gstreamer-base", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-video = { package = "gstreamer-video", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-audio = { package = "gstreamer-audio", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst = { package = "gstreamer", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-base = { package = "gstreamer-base", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-video = { package = "gstreamer-video", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-audio = { package = "gstreamer-audio", git = "https://github.com/sdroege/gstreamer-rs" }
 byte-slice-cast = "1.0"
 num-traits = "0.2"
 
 [dev-dependencies]
-gst_check = { package = "gstreamer-check", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst_check = { package = "gstreamer-check", git = "https://github.com/sdroege/gstreamer-rs" }
 
 [lib]
 name = "gsthsv"

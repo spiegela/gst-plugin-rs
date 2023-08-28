@@ -2,15 +2,15 @@
 name = "gst-plugin-sodium"
 version = "0.12.0-alpha.1"
 authors = ["Jordan Petridis <jordan@centricular.com>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 description = "GStreamer plugin for libsodium-based file encryption and decryption"
 license = "MIT"
 edition = "2021"
 rust-version = "1.70"
 
 [dependencies]
-gst = { package="gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
-gst-base = { package = "gstreamer-base", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst = { package="gstreamer", git = "https://github.com/sdroege/gstreamer-rs" }
+gst-base = { package = "gstreamer-base", git = "https://github.com/sdroege/gstreamer-rs" }
 sodiumoxide = "0.2.1"
 once_cell = "1.3.0"
 hex = "0.4"
@@ -26,11 +26,11 @@ pretty_assertions = "1"
 rand = "0.8"
 
 [dev-dependencies.gst-check]
-git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs"
+git = "https://github.com/sdroege/gstreamer-rs"
 package="gstreamer-check"
 
 [dev-dependencies.gst-app]
-git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs"
+git = "https://github.com/sdroege/gstreamer-rs"
 package="gstreamer-app"
 
 [lib]

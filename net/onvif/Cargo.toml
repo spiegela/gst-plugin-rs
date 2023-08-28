@@ -2,17 +2,17 @@
 name = "gst-plugin-onvif"
 version = "0.12.0-alpha.1"
 authors = ["Mathieu Duponchelle <mathieu@centricular.com>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 license = "MPL-2.0"
 description = "GStreamer Rust ONVIF Plugin"
 edition = "2021"
 rust-version = "1.70"
 
 [dependencies]
-gst = { package = "gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", features = ["v1_20"] }
-gst-rtp = { package = "gstreamer-rtp", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", features = ["v1_20"] }
-gst-base = { package = "gstreamer-base", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", features = ["v1_20"] }
-gst-video = { package = "gstreamer-video", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs", features = ["v1_20"] }
+gst = { package = "gstreamer", git = "https://github.com/sdroege/gstreamer-rs", features = ["v1_20"] }
+gst-rtp = { package = "gstreamer-rtp", git = "https://github.com/sdroege/gstreamer-rs", features = ["v1_20"] }
+gst-base = { package = "gstreamer-base", git = "https://github.com/sdroege/gstreamer-rs", features = ["v1_20"] }
+gst-video = { package = "gstreamer-video", git = "https://github.com/sdroege/gstreamer-rs", features = ["v1_20"] }
 xmlparser = "0.13"
 chrono = { version = "0.4", default-features = false }
 cairo-rs = { git = "https://github.com/gtk-rs/gtk-rs-core", features=["use_glib"] }

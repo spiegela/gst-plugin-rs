@@ -2,14 +2,14 @@
 name = "gst-plugin-tracers"
 version = "0.12.0-alpha.1"
 authors = ["Guillaume Desmottes <guillaume.desmottes@onestream.live>"]
-repository = "https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs"
+repository = "https://github.com/spiegela/gst-plugin-rs"
 license = "MPL-2.0"
 edition = "2021"
 description = "GStreamer Rust tracers plugin"
 rust-version = "1.70"
 
 [dependencies]
-gst = { package = "gstreamer", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gst = { package = "gstreamer", git = "https://github.com/sdroege/gstreamer-rs" }
 anyhow = "1"
 regex = "1"
 
