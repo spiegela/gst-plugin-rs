@@ -3192,7 +3192,7 @@ impl BaseWebRTCSink {
             let is_video = match sink_caps.structure(0).unwrap().name().as_str() {
                 "video/x-raw" => true,
                 "audio/x-raw" => false,
-                _ => unreachable!(),
+                _ => anyhow::bail!("Unsupported caps: {}", sink_caps),
             };
 
             codecs
