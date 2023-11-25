@@ -22,6 +22,9 @@ use super::homegrown_cc::CongestionController;
 use super::{WebRTCSinkCongestionControl, WebRTCSinkError, WebRTCSinkMitigationMode};
 use crate::signaller::Signaller;
 use std::collections::BTreeMap;
+use clap::builder::TypedValueParser;
+use gst_video::prelude::VideoDecoderExtManual;
+use gst_video::VideoFrameExt;
 
 static CAT: Lazy<gst::DebugCategory> = Lazy::new(|| {
     gst::DebugCategory::new(
@@ -2484,7 +2487,16 @@ impl WebRTCSink {
         let is_video = match sink_caps.structure(0).unwrap().name() {
             "video/x-raw" => true,
             "audio/x-raw" => false,
-            _ => unreachable!(),
+            _ => {
+                gst::error!(
+                    CAT,
+                    obj: element,
+                    "Unsupported caps for stream {}: {}",
+                    name,
+                    sink_caps
+                );
+                return (name, gst::Caps::new_empty());
+            }
         };
 
         let mut payloader_caps = gst::Caps::new_empty();
